@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Rooms - Vila Proi , Ksamil , Albania</title>
-    <meta name="description"
-        content="**.">
-    <meta name="keywords"
-        content="Rooms - Vila Proi , Ksamil , Albania , **">
+    <meta name="description" content="Experience the pinnacle of comfort and luxury at Vila Proi in Ksamil, Albania. Our rooms offer a serene retreat with top-notch amenities, stunning views, and unmatched hospitality. Discover the inviting ambiance and cozy accommodations that await you at our seaside hotel.">
+    <meta name="keywords" content="Rooms - Vila Proi, Ksamil, Albania, Apartament , Rooms , Family Rooms , One Bedroom , Vacation , Hospitality , Beach , Tourism , Hospitality">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/icon/**.png">
+    <link rel="icon" href="assets/icon/vila proi-01.png.png">
     <!--Font-Awasome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!--Swiper-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" />
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Owl Carousel-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <!--My CSS-->
     <link rel="stylesheet" href="stylesheet.css">
 </head>
@@ -23,7 +27,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top text-center">
             <div class="container">
                 <a href="index.html" class="navbar-brand">
-                    <img src="assets/icon/**.png" height="55px">
+                    <img src="assets/icon/vila proi-01.png" height="55px">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNav"
                     aria-controls="collapseNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,7 +57,7 @@
                             <a href="rooms.html" class="nav-link"><img src="assets/icon/GBR.png" width="23px"></a>
                         </li>
                     </ul>
-                    <div class="mbr10"><a href="contact.html" class="btn-1">Book
+                    <div class="mbr10"><a href="contact.html" class="main-btn">Book
                             Now<span></span></a></div>
                 </div>
             </div>
@@ -62,16 +66,116 @@
     <main>
         <!--Section 1-->
         <section class="bg-images" style="background-image: url(assets/image/25.jpg);">
-            <h1 class="display-2 fadeindown sldh1">
+            <h1 class="display-2 fadeindown active-down sldh1">
                 Our Rooms
             </h1>
-            <p class="fadeinleft sldh1-5">
-                Luxurious, Comfortable, Unique  </p>
+            <p class="fadeinleft active-left sldh1-5">
+                Luxurious, Comfortable, Unique </p>
         </section>
         <br><br>
         <!--End Section 1-->
         <!--Rooms-->
-        
+        <section class="room-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="single-room mb-50">
+                            <div class="room-img">
+                                <a href="rooms.html"><img src="assets/image/4.jpg" alt=""></a>
+                            </div>
+                            <div class="room-caption">
+                                <h3><a href="rooms.html">One-Bedroom Apartment</a></h3>
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>
+                                    1 Double Bed + 2 Single Beds</small><br>
+                                <br>
+                                <p>The air-conditioned apartment features 1 bedroom, 1 bathroom and a kitchen. The
+                                    apartment's kitchen is available for cooking and storing food. The unit offers 3 beds.</p> <br>
+                                <a href="contact.html" class="main-btn">Book Now<i class="ti-angle-right"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="single-room mb-50">
+                            <div class="room-img">
+                                <a href="rooms.html"><img src="assets/image/7.jpg" alt=""></a>
+                            </div>
+                            <div class="room-caption">
+                                <h3><a href="rooms.html">Studio</a></h3>
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>
+                                    1 twin bed
+                                    and
+                                    1 full bed</small>
+                                <br>
+                                <br>
+                                <p>This studio has a private bathroom and air conditioning. The studio's kitchen is
+                                    available for cooking and storing food. This studio offers a flat-screen TV. The
+                                    unit has 2 beds.</p> <br>
+                                <a href="contact.html" class="main-btn">Book Now<i class="ti-angle-right"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="single-room mb-50">
+                            <div class="room-img">
+                                <a href="rooms.html"> <img src="assets/image/34.jpg" alt=""></a>
+                            </div>
+                            <div class="room-caption">
+                                <h3><a href="rooms.html">Family Room</a></h3>
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>2 twin
+                                    beds
+                                    and
+                                    1 full bed</small>
+                                <br>
+                                <br>
+                                <p>The family room's kitchen is available for cooking and storing food. This family room
+                                    features a private bathroom and air conditioning. The unit offers 3 beds.</p> <br>
+                                <a href="contact.html" class="main-btn">Book Now<i class="ti-angle-right"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="single-room mb-50">
+                            <div class="room-img">
+                                <a href="rooms.html"> <img src="assets/image/11.jpg" alt=""></a>
+                            </div>
+                            <div class="room-caption">
+                                <h3><a href="rooms.html">Two-Bedroom Apartment</a></h3>
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>2 twin
+                                    beds , 1 full bed , 1 sofa bed</small>
+                                <br>
+                                <br>
+                                <p>The air-conditioned apartment has 2 bedrooms, 1 bathroom and a kitchen. The
+                                    apartment's kitchen is available for cooking and storing food. This apartment offers
+                                    a flat-screen TV. The unit has 4 beds.</p> <br>
+                                <a href="contact.html" class="main-btn">Book Now<i class="ti-angle-right"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="single-room mb-50">
+                            <div class="room-img">
+                                <a href="rooms.html"> <img src="assets/image/46.jpg" alt=""></a>
+                            </div>
+                            <div class="room-caption">
+                                <h3><a href="rooms.html">One-Bedroom Apartment</a></h3>
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>2 twin
+                                    beds
+                                    and
+                                    1 full bed</small>
+                                <br>
+                                <br>
+                                <p>The air-conditioned apartment features 1 bedroom, 1 bathroom and a kitchen. The
+                                    apartment's kitchen is available for cooking and storing food. This apartment
+                                    provides a flat-screen TV. The unit offers 3 beds.</p> <br>
+                                <a href="contact.html" class="main-btn">Book Now<i class="ti-angle-right"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!--End Rooms-->
         <!--Footer-->
         <section id="footer" class="pt-0">
@@ -97,7 +201,7 @@
                         </div>
                         <div
                             class="col-sm-12 col-md-6 col-lg-6 col-xl-6 m-0 Footer-Menu text-center justify-content-center pt-2">
-                            <img src="assets/icon/**.png" style=" width: 140px;  ">
+                            <img src="assets/icon/vila proi WHITE-01.png" style=" width: 140px;  ">
                             <ul class="Navlist justify-content-center pt-4">
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="rooms.html">Rooms</a></li>
@@ -107,8 +211,8 @@
                                 <li><a href="about.html">About</a></li>
                                 <li><a href="contact.html">Contact</a></li>
                             </ul>
-                            <div style="padding-top: 20px;"><a href="contact.html" class="btn-1">Book
-                            Now<span></span></a></div>
+                            <div style="padding-top: 20px;"><a href="contact.html" class="main1-btn">Book
+                                    Now<span></span></a></div>
                         </div>
                         <div class="col-sm-12 col-md-1 col-lg-3 col-xl-3 align-self-start footer-location">
                             <h5 class="text-uppercase fw-bold mb-4" style="color: #FFFFFF;">Location :</h5>
@@ -135,6 +239,14 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.slim.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+    <!--Swiper-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+        integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--JQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--Owl Carousel-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!--My Script-->
     <script src="main.js"></script>
 </body>

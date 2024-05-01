@@ -65,52 +65,57 @@ elements4.forEach((elements4) => {
   observer4.observe(elements4);
 });
 //Index-Home
-document.addEventListener('DOMContentLoaded', function () {
-  // Initialize the carousel
-  var myCarousel = new bootstrap.Carousel(document.getElementById('CarouselHead'), {
-      interval: 5000 // Change image every 5 seconds
-  });
-
-  // Hover functionality for next and previous buttons
-  var prevButton = document.querySelector('.carousel-control-prev');
-  var nextButton = document.querySelector('.carousel-control-next');
-
-  // Get carousel items and total number of items
-  var carouselItems = document.querySelectorAll('.carousel-item');
-  var totalItems = carouselItems.length;
-
-  // Index of current active item
-  var currentIndex = 0;
-
-  // Function to update preview image
-  function updatePreviewImage(index) {
-      var nextIndex = (index + 1) % totalItems;
-      var prevIndex = index - 1;
-      if (prevIndex < 0) {
-          prevIndex = totalItems - 1; // Wrap around to the last item
-      }
-
-      nextButton.style.backgroundImage = "url('" + carouselItems[nextIndex].querySelector('img').src + "')";
-      prevButton.style.backgroundImage = "url('" + carouselItems[prevIndex].querySelector('img').src + "')";
-  }
-
-  // Initial preview update
-  updatePreviewImage(currentIndex);
-
-  // Show next photo when hovering over the next button
-  nextButton.addEventListener('mouseenter', function () {
-      updatePreviewImage(currentIndex);
-  });
-
-  // Show previous photo when hovering over the previous button
-  prevButton.addEventListener('mouseenter', function () {
-      updatePreviewImage(currentIndex);
-  });
-
-  // Listen to slide event to update currentIndex and preview
-  myCarousel._element.addEventListener('slide.bs.carousel', function (event) {
-      currentIndex = event.to;
-      updatePreviewImage(currentIndex);
-  });
+var swiper = new Swiper(".home-slider", {
+  grabCursor:true,
+  loop:true,
+  centeredSlides:true,
+  autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+  },
+  navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+  },
 });
-
+//Index-Gallery
+var swiper = new Swiper(".gallery-slider", {
+  spaceBetween: 10,
+  grabCursor:true,
+  loop:true,
+  centeredSlides:true,
+  autoplay: {
+      delay: 1500,
+      disableOnInteraction: false,
+  },
+  pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+  },
+  breakpoints: {
+      0: {
+          slidesPerView: 1,
+      },
+      768: {
+          slidesPerView: 3,
+      },
+      991: {
+          slidesPerView: 4,
+      },
+  },
+});
+//Index-Review
+var swiper = new Swiper(".review-slider", {
+  spaceBetween: 10,
+  grabCursor:true,
+  loop:true,
+  centeredSlides:true,
+  autoplay: {
+      delay: 7500,
+      disableOnInteraction: false,
+  },
+  pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+  },
+});
